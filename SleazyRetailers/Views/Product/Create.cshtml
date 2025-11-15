@@ -1,0 +1,67 @@
+﻿@model SleazyRetailers.Models.Product
+
+@{
+    ViewData["Title"] = "Create New Product";
+}
+
+<div class="container my-5">
+    <h2>Create New Product</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- CRITICAL: enctype="multipart/form-data" is required for file uploads -->
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <!-- Show ALL validation errors, including those from the Controller (like missing image) -->
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ProductName" class="control-label"></label>
+                    <input asp-for="ProductName" class="form-control" />
+                    <span asp-validation-for="ProductName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <!-- Group Price and Stock together -->
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="StockAvailable" class="control-label"></label>
+                        <input asp-for="StockAvailable" class="form-control" type="number" />
+                        <span asp-validation-for="StockAvailable" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- File Upload Field. Name MUST match the IFormFile parameter in the controller (imageFile) -->
+                <div class="form-group mb-4">
+                    <label for="imageFile" class="control-label">Product Image</label>
+                    <input name="imageFile" id="imageFile" type="file" class="form-control" accept="image/*" />
+                    <!-- This span uses the manual error key "ImageFile" added in the controller -->
+                    <small class="text-muted d-block mt-1">Choose a file for the product image.</small>
+                </div>
+
+                <div class="form-group">
+                    <!-- Ensure the button is explicitly a submit button -->
+                    <button type="submit" class="btn btn-primary me-2">Create Product</button>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

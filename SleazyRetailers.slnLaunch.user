@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SleazyRetailers\\SleazyRetailers.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

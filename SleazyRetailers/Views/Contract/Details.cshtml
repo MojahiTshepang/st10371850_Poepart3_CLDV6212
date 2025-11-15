@@ -1,0 +1,117 @@
+﻿@model Contract
+
+@{
+    ViewData["Title"] = "Contract Details";
+}
+
+<div class="container my-5">
+    <h2><i class="fas fa-file-contract"></i> Contract Details</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Model.ContractName</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Contract Name:</dt>
+                        <dd class="col-sm-8">@Model.ContractName</dd>
+
+                        <dt class="col-sm-4">Contract Type:</dt>
+                        <dd class="col-sm-8">
+                            <span class="badge bg-info">@Model.ContractType</span>
+                        </dd>
+
+                        <dt class="col-sm-4">File Size:</dt>
+                        <dd class="col-sm-8">@(Model.FileSize.HasValue? FormatFileSize(Model.FileSize.Value) : "N/A")</dd>
+
+                        <dt class="col-sm-4">Upload Date:</dt>
+                        <dd class="col-sm-8">@Model.UploadDate.ToString("yyyy-MM-dd HH:mm")</dd>
+
+                        @if (!string.IsNullOrEmpty(Model.Description))
+                        {
+                            <dt class="col-sm-4">Description:</dt>
+                            <dd class="col-sm-8">@Model.Description</dd>
+                        }
+
+                        @if (Model.EffectiveDate.HasValue)
+                        {
+                            <dt class="col-sm-4">Effective Date:</dt>
+                            <dd class="col-sm-8">@Model.EffectiveDate.Value.ToString("yyyy-MM-dd")</dd>
+                        }
+
+                        @if (Model.ExpiryDate.HasValue)
+                        {
+                            <dt class="col-sm-4">Expiry Date:</dt>
+                            <dd class="col-sm-8">@Model.ExpiryDate.Value.ToString("yyyy-MM-dd")</dd>
+                        }
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group">
+                        <a asp-action="Download" asp-route-fileName="@Model.ContractName"
+                           class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Contract
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to List
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h6 class="card-title mb-0"><i class="fas fa-cloud"></i> Storage Information</h6>
+                </div>
+                <div class="card-body">
+                    <p class="small">
+                        <strong>Storage Service:</strong> Azure Files<br>
+                        <strong>File Share:</strong> dummycontracts<br>
+                        <strong>Directory:</strong> contracts<br>
+                        <strong>Protocol:</strong> SMB
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header bg-info text-white">
+                    <h6 class="card-title mb-0"><i class="fas fa-cogs"></i> Quick Actions</h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a asp-action="Download" asp-route-fileName="@Model.ContractName"
+                           class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                        <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
+                            <i class="fas fa-list"></i> All Contracts
+                        </a>
+                        <a asp-action="Upload" class="btn btn-outline-success btn-sm">
+                            <i class="fas fa-plus"></i> Upload New
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@functions {
+    public string FormatFileSize(long bytes)
+    {
+        string[] sizes = { "B", "KB", "MB", "GB" };
+        int order = 0;
+        double len = bytes;
+        while (len >= 1024 && order < sizes.Length - 1)
+        {
+            order++;
+            len = len / 1024;
+        }
+        return $"{len:0.##} {sizes[order]}";
+    }
+}

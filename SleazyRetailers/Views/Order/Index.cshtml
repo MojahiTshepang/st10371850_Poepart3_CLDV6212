@@ -1,0 +1,238 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "Manage Orders";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1><i class="bi bi-cart-check"></i> Manage Orders</h1>
+        <div>
+            <span class="badge bg-primary fs-6">Total Orders: @Model.Count()</span>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="card shadow-sm">
+            <div class="card-body text-center py-5">
+                <i class="bi bi-cart-x display-1 text-muted mb-3"></i>
+                <h3 class="text-muted">No Orders Found</h3>
+                <p class="text-muted">There are no orders in the system yet.</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Order Status Summary -->
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <div class="card bg-warning text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Pending")</h5>
+                        <small>Pending</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-success text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Approved")</h5>
+                        <small>Approved</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Processing")</h5>
+                        <small>Processing</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-primary text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Completed")</h5>
+                        <small>Completed</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Shipped")</h5>
+                        <small>Shipped</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-danger text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Declined")</h5>
+                        <small>Declined</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer ID</th>
+                                <th>Product ID</th>
+                                <th>Date</th>
+                                <th>Quantity</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                                <th>Shipping Address</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model.OrderByDescending(o => o.OrderDate))
+                            {
+                                <tr>
+                                    <td>
+                                        <strong class="font-monospace">@order.Id</strong>
+                                    </td>
+                                    <td>@order.CustomerId</td>
+                                    <td>@order.ProductId</td>
+                                    <td>
+                                        <small class="text-muted">
+                                            @order.OrderDate.ToString("MMM dd, yyyy")
+                                        </small>
+                                        <br>
+                                        <small class="text-muted">
+                                            @order.OrderDate.ToString("hh:mm tt")
+                                        </small>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-secondary">@order.Quantity</span>
+                                    </td>
+                                    <td>
+                                        <strong class="text-success">$@order.TotalAmount.ToString("F2")</strong>
+                                    </td>
+                                    <td>
+                                        @{
+                                            var statusBadgeClass = order.Status switch
+                                            {
+                                                "Pending" => "bg-warning",
+                                                "Approved" => "bg-success",
+                                                "Processing" => "bg-info",
+                                                "Completed" => "bg-primary",
+                                                "Shipped" => "bg-secondary",
+                                                "Declined" => "bg-danger",
+                                                _ => "bg-secondary"
+                                            };
+                                        }
+                                        <span class="badge @statusBadgeClass">@order.Status</span>
+                                    </td>
+                                    <td>
+                                        <small class="text-muted">@order.ShippingAddress</small>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group-vertical btn-group-sm">
+                                            <!-- Quick Action Buttons -->
+                                            @if (order.Status == "Pending")
+                                            {
+                                                <form method="post" action="@Url.Action("Approve", "Order")">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@order.Id" />
+                                                    <button type="submit" class="btn btn-success btn-sm mb-1"
+                                                            onclick="return confirm('Approve this order?')">
+                                                        <i class="bi bi-check-lg"></i> Approve
+                                                    </button>
+                                                </form>
+
+                                                <form method="post" action="@Url.Action("Decline", "Order")">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@order.Id" />
+                                                    <button type="submit" class="btn btn-danger btn-sm mb-1"
+                                                            onclick="return confirm('Decline this order?')">
+                                                        <i class="bi bi-x-lg"></i> Decline
+                                                    </button>
+                                                </form>
+                                            }
+
+                                            @if (order.Status == "Approved")
+                                            {
+                                                <form method="post" action="@Url.Action("UpdateStatus", "Order")">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@order.Id" />
+                                                    <input type="hidden" name="status" value="Processing" />
+                                                    <button type="submit" class="btn btn-info btn-sm mb-1">
+                                                        <i class="bi bi-gear"></i> Process
+                                                    </button>
+                                                </form>
+                                            }
+
+                                            @if (order.Status == "Processing")
+                                            {
+                                                <form method="post" action="@Url.Action("UpdateStatus", "Order")">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@order.Id" />
+                                                    <input type="hidden" name="status" value="Shipped" />
+                                                    <button type="submit" class="btn btn-secondary btn-sm mb-1">
+                                                        <i class="bi bi-truck"></i> Ship
+                                                    </button>
+                                                </form>
+                                            }
+
+                                            @if (order.Status == "Shipped")
+                                            {
+                                                <form method="post" action="@Url.Action("Complete", "Order")">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@order.Id" />
+                                                    <button type="submit" class="btn btn-primary btn-sm mb-1"
+                                                            onclick="return confirm('Mark this order as completed?')">
+                                                        <i class="bi bi-check-all"></i> Complete
+                                                    </button>
+                                                </form>
+                                            }
+
+                                            <!-- Edit Button -->
+                                            <a href="@Url.Action("Edit", "Order", new { id = order.Id })"
+                                               class="btn btn-outline-warning btn-sm mb-1">
+                                                <i class="bi bi-pencil"></i> Edit
+                                            </a>
+
+                                            <!-- Delete Button -->
+                                            <form method="post" action="@Url.Action("Delete", "Order")">
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="id" value="@order.Id" />
+                                                <button type="submit" class="btn btn-outline-danger btn-sm"
+                                                        onclick="return confirm('Delete this order?')">
+                                                    <i class="bi bi-trash"></i> Delete
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>

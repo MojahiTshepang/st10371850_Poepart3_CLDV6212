@@ -1,0 +1,89 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Edit Order";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <h4 class="mb-0"><i class="bi bi-pencil"></i> Edit Order</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Order ID</label>
+                            <input class="form-control" value="@Model.Id" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Customer ID</label>
+                            <input class="form-control" value="@Model.CustomerId" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Product ID</label>
+                            <input class="form-control" value="@Model.ProductId" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Quantity</label>
+                            <input class="form-control" value="@Model.Quantity" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Total Amount</label>
+                            <input class="form-control" value="$@Model.TotalAmount.ToString("F2")" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Order Date</label>
+                            <input class="form-control" value="@Model.OrderDate.ToString("MMM dd, yyyy hh:mm tt")" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Status" class="form-label fw-bold">Order Status</label>
+                            <select asp-for="Status" class="form-select" required>
+                                <option value="Pending">⏳ Pending</option>
+                                <option value="Approved">✅ Approved</option>
+                                <option value="Processing">⚙️ Processing</option>
+                                <option value="Shipped">🚚 Shipped</option>
+                                <option value="Completed">🎉 Completed</option>
+                                <option value="Declined">❌ Declined</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ShippingAddress" class="form-label fw-bold">Shipping Address</label>
+                            <textarea asp-for="ShippingAddress" class="form-control" rows="3" required></textarea>
+                            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("Index", "Order")" class="btn btn-outline-secondary me-md-2">
+                                <i class="bi bi-arrow-left"></i> Back to Orders
+                            </a>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="bi bi-check-lg"></i> Update Order
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Set the current status as selected
+            $('#Status').val('@Model.Status');
+        });
+    </script>
+}

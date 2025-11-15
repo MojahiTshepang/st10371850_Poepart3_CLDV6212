@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome, @ViewBag.FirstName!</h1>
+            <p class="lead">You are logged in as an <strong>Administrator</strong>.</p>
+        </div>
+    </div>
+
+    <!-- Quick Setup Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="bi bi-lightning-charge"></i> Quick Setup</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-center h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success">Add Demo Products</h5>
+                                    <p class="card-text">Quickly add sample products for testing customer orders</p>
+                                    <form asp-action="AddDemoProducts" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-success">
+                                            <i class="bi bi-plus-circle"></i> Add Demo Products
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">Full Demo Data</h5>
+                                    <p class="card-text">Add complete demo data (customers, products, orders)</p>
+                                    <form asp-action="CreateDemoData" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="bi bi-database-add"></i> Add All Demo Data
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Clear All Data</h5>
+                                    <p class="card-text">Warning: This will remove all data from the system</p>
+                                    <form asp-action="ClearAllData" method="post" onsubmit="return confirm('Are you sure you want to clear ALL data? This cannot be undone!');">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-danger">
+                                            <i class="bi bi-trash"></i> Clear All Data
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+                <div class="card-body">
+                    <h3>@ViewBag.CustomerCount</h3>
+                    <p>Customers</p>
+                    <a href="@Url.Action("Index", "Customer")" class="btn btn-light btn-sm">Manage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center bg-success text-white">
+                <div class="card-body">
+                    <h3>@ViewBag.ProductCount</h3>
+                    <p>Products</p>
+                    <a href="@Url.Action("ManageProducts", "Home")" class="btn btn-light btn-sm">Manage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center bg-warning text-white">
+                <div class="card-body">
+                    <h3>@ViewBag.OrderCount</h3>
+                    <p>Orders</p>
+                    <a href="@Url.Action("ManageOrders", "Home")" class="btn btn-light btn-sm">Manage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card text-center bg-info text-white">
+                <div class="card-body">
+                    <h3>@ViewBag.ContractCount</h3>
+                    <p>Contracts</p>
+                    <a href="@Url.Action("Index", "Contract")" class="btn btn-light btn-sm">Manage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-lightning"></i> Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="@Url.Action("Create", "Customer")" class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-person-plus"></i> Add Customer
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("Create", "Product")" class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-box-seam"></i> Add Product
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("Create", "Order")" class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-cart-plus"></i> Create Order
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("Upload", "Contract")" class="btn btn-outline-primary w-100 mb-2">
+                                <i class="bi bi-file-earmark-plus"></i> Upload Contract
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

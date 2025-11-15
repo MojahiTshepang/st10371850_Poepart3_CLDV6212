@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Manage Products";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>Manage Products</h1>
+        <a href="@Url.Action("Create", "Product")" class="btn btn-primary">Add New Product</a>
+    </div>
+
+    <div class="table-responsive mt-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.ProductName</td>
+                        <td>@product.Description</td>
+                        <td>$@product.Price</td>
+                        <td>@product.StockAvailable</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Product", new { id = product.Id })" class="btn btn-sm btn-warning">Edit</a>
+                            <form method="post" action="@Url.Action("Delete", "Product", new { id = product.Id })" style="display: inline;">
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "My Orders";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1><i class="bi bi-bag-check"></i> My Orders</h1>
+        <div>
+            <a href="@Url.Action("Products", "Customer")" class="btn btn-outline-primary me-2">
+                <i class="bi bi-bag"></i> Continue Shopping
+            </a>
+            <a href="@Url.Action("Create", "Order")" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Order
+            </a>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="card shadow-sm">
+            <div class="card-body text-center py-5">
+                <i class="bi bi-inbox display-1 text-muted mb-3"></i>
+                <h3 class="text-muted">No Orders Yet</h3>
+                <p class="text-muted mb-4">You haven't placed any orders yet. Start shopping to see your orders here!</p>
+                <a href="@Url.Action("Products", "Customer")" class="btn btn-primary btn-lg">
+                    <i class="bi bi-bag"></i> Browse Products
+                </a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Order Status Summary for Customer -->
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <div class="card bg-warning text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Pending")</h5>
+                        <small>Pending</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-success text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Approved")</h5>
+                        <small>Approved</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Processing")</h5>
+                        <small>Processing</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-primary text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Completed")</h5>
+                        <small>Completed</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card bg-danger text-white">
+                    <div class="card-body text-center p-2">
+                        <h5>@Model.Count(o => o.Status == "Declined")</h5>
+                        <small>Declined</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-list-ul"></i> Order History
+                    <span class="badge bg-primary">@Model.Count() orders</span>
+                </h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Product ID</th>
+                                <th>Date</th>
+                                <th>Quantity</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                                <th>Shipping Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model.OrderByDescending(o => o.OrderDate))
+                            {
+                                <tr>
+                                    <td>
+                                        <strong class="font-monospace">@order.Id.Substring(0, 8)...</strong>
+                                    </td>
+                                    <td>@order.ProductId</td>
+                                    <td>
+                                        <small class="text-muted">
+                                            @order.OrderDate.ToString("MMM dd, yyyy")
+                                        </small>
+                                        <br>
+                                        <small class="text-muted">
+                                            @order.OrderDate.ToString("hh:mm tt")
+                                        </small>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-secondary">@order.Quantity</span>
+                                    </td>
+                                    <td>
+                                        <strong class="text-success">$@order.TotalAmount.ToString("F2")</strong>
+                                    </td>
+                                    <td>
+                                        @{
+                                            var statusBadgeClass = order.Status switch
+                                            {
+                                                "Pending" => "bg-warning",
+                                                "Approved" => "bg-success",
+                                                "Processing" => "bg-info",
+                                                "Completed" => "bg-primary",
+                                                "Shipped" => "bg-secondary",
+                                                "Declined" => "bg-danger",
+                                                _ => "bg-secondary"
+                                            };
+
+                                            var statusIcon = order.Status switch
+                                            {
+                                                "Pending" => "bi-clock",
+                                                "Approved" => "bi-check-circle",
+                                                "Processing" => "bi-gear",
+                                                "Completed" => "bi-check-all",
+                                                "Shipped" => "bi-truck",
+                                                "Declined" => "bi-x-circle",
+                                                _ => "bi-question-circle"
+                                            };
+                                        }
+                                        <span class="badge @statusBadgeClass">
+                                            <i class="bi @statusIcon"></i> @order.Status
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <small class="text-muted">@order.ShippingAddress</small>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>

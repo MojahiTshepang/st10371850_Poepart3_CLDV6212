@@ -1,0 +1,997 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\myorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\myorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\order\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\order\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\sleazyretailers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\sleazyretailers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\home\\manageorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\home\\manageorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\contract\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\contract\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\contractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\contractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\home\\manageproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\home\\manageproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\upload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\upload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\contracttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\contracttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\services\\fallbackstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\services\\fallbackstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\sleazyretailers.functions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\sleazyretailers.functions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\functions\\filestoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\functions\\filestoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\functions\\queueprocessingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\functions\\queueprocessingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\functions\\blobstoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\functions\\blobstoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers.functions\\functions\\tablestoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71BB8EB2-5EDE-4CE5-A372-00C415F2CE74}|SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj|solutionrelative:sleazyretailers.functions\\functions\\tablestoragefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\contract\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\contract\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\contract\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\contract\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\upload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\upload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\migrations\\20251115041211_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\migrations\\20251115041211_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|c:\\users\\lab_services_student\\documents\\sleazyretailers ky\\sleazyretailers k\\sleazyretailers\\sleazyretailers\\migrations\\20251115025410_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5B2EB4-2484-48C1-846D-02433C3BF3D5}|SleazyRetailers\\SleazyRetailers.csproj|solutionrelative:sleazyretailers\\migrations\\20251115025410_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Order\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Edit.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Order\\Edit.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:16:39.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T16:53:53.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Create.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Create.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\Create.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAcwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T16:55:11.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Edit.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:00:12.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\CartItem.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T06:32:43.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGwCAAAAAAAAAAAiwHUCAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:36:59.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Cart.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Order\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Cart.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Order\\Cart.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAcwLgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T06:37:12.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\SessionExtensions.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\SessionExtensions.cs",
+              "RelativeToolTip": "SleazyRetailers\\SessionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T06:35:25.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Order.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T17:13:03.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Order\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAcwKcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:15:42.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAcwO0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:14:38.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\MyOrders.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\MyOrders.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\MyOrders.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\MyOrders.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAcwKgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:05:53.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:31:37.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHABAAAAAAAAAAAswJMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:16:15.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Products.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\Products.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Products.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\Products.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAcwKkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:04:36.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Customer\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Customer\\Dashboard.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Customer\\Dashboard.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T03:58:49.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\AzureStorageService.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Services\\AzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\AzureStorageService.cs",
+              "RelativeToolTip": "SleazyRetailers\\Services\\AzureStorageService.cs",
+              "ViewState": "AgIAACADAAAAAAAAAAAiwEUDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:28:14.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ManageOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\ManageOrders.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Home\\ManageOrders.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\ManageOrders.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Home\\ManageOrders.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwFYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:08:03.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SleazyRetailers.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\SleazyRetailers.csproj",
+              "RelativeDocumentMoniker": "SleazyRetailers\\SleazyRetailers.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\SleazyRetailers.csproj",
+              "RelativeToolTip": "SleazyRetailers\\SleazyRetailers.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-13T17:18:08.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Home\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Home\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwJIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T03:59:53.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Upload.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Contract\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Upload.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Contract\\Upload.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T14:34:26.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ManageProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\ManageProducts.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Home\\ManageProducts.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\ManageProducts.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Home\\ManageProducts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:07:01.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ContractController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\ContractController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\ContractController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\ContractController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\ContractController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAiwKwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T14:09:57.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:36:14.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAYwJwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T03:37:38.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADABAAAAAAAAAAAwwF4BAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:28:51.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:09:33.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20251115041211_AddUsersTable.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Migrations\\20251115041211_AddUsersTable.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Migrations\\20251115041211_AddUsersTable.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Migrations\\20251115041211_AddUsersTable.cs",
+              "RelativeToolTip": "SleazyRetailers\\Migrations\\20251115041211_AddUsersTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T04:12:11.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T04:10:15.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\AuthService.cs",
+              "RelativeToolTip": "SleazyRetailers\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T03:36:44.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\User.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T03:35:39.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20251115025410_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Migrations\\20251115025410_InitialCreate.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Migrations\\20251115025410_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Migrations\\20251115025410_InitialCreate.cs",
+              "RelativeToolTip": "SleazyRetailers\\Migrations\\20251115025410_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T02:54:11.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\appsettings.json",
+              "RelativeDocumentMoniker": "SleazyRetailers\\appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\appsettings.json",
+              "RelativeToolTip": "SleazyRetailers\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T15:39:10.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Program.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Program.cs",
+              "RelativeToolTip": "SleazyRetailers\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwEMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:24:12.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Product.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:35:24.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:27:11.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\Contract.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Contract.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\Contract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T14:16:41.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ContractTypes.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ContractTypes.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\ContractTypes.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ContractTypes.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\ContractTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T02:44:44.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Upload.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Upload.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\Upload.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Upload.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\Upload.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T17:13:47.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:52:12.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SleazyRetailers\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\appsettings.Development.json",
+              "RelativeToolTip": "SleazyRetailers\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T10:23:34.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\Customer.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:46:17.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IAzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\IAzureStorageService.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Services\\IAzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\IAzureStorageService.cs",
+              "RelativeToolTip": "SleazyRetailers\\Services\\IAzureStorageService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA5wB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:29:05.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FallbackStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\FallbackStorageService.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Services\\FallbackStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Services\\FallbackStorageService.cs",
+              "RelativeToolTip": "SleazyRetailers\\Services\\FallbackStorageService.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAIwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:22:37.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "SleazyRetailers\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:37:39.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Program.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Program.cs",
+              "RelativeToolTip": "SleazyRetailers.Functions\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:13:31.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\local.settings.json",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\local.settings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\local.settings.json",
+              "RelativeToolTip": "SleazyRetailers.Functions\\local.settings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T16:19:37.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "BlobStorageFunction.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\BlobStorageFunction.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\Functions\\BlobStorageFunction.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\BlobStorageFunction.cs",
+              "RelativeToolTip": "SleazyRetailers.Functions\\Functions\\BlobStorageFunction.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:11:38.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "QueueProcessingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\QueueProcessingFunction.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\Functions\\QueueProcessingFunction.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\QueueProcessingFunction.cs",
+              "RelativeToolTip": "SleazyRetailers.Functions\\Functions\\QueueProcessingFunction.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:12:25.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SleazyRetailers.Functions.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj",
+              "RelativeToolTip": "SleazyRetailers.Functions\\SleazyRetailers.Functions.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-14T16:09:49.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FileStorageFunction.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\FileStorageFunction.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\Functions\\FileStorageFunction.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\FileStorageFunction.cs",
+              "RelativeToolTip": "SleazyRetailers.Functions\\Functions\\FileStorageFunction.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:13:11.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "TableStorageFunction.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\TableStorageFunction.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers.Functions\\Functions\\TableStorageFunction.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers.Functions\\Functions\\TableStorageFunction.cs",
+              "RelativeToolTip": "SleazyRetailers.Functions\\Functions\\TableStorageFunction.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:10:43.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:09:42.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Upload\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Upload\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Upload\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Upload\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:25:51.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Contract\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Contract\\Index.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwIQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T14:31:24.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwFQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:28:38.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Details.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Contract\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Contract\\Details.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Contract\\Details.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T14:35:42.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "OrderCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:25:35.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ViewModels\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Models\\ViewModels\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Models\\ViewModels\\HomeViewModel.cs",
+              "RelativeToolTip": "SleazyRetailers\\Models\\ViewModels\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:25:01.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:10:42.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "SleazyRetailers\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\SleazyRetailers KY\\SleazyRetailers K\\SleazyRetailers\\SleazyRetailers\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "SleazyRetailers\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T17:01:07.093Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

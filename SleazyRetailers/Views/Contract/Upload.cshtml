@@ -1,0 +1,149 @@
+﻿@model Contract
+
+@{
+    ViewData["Title"] = "Upload Contract";
+}
+
+<div class="container my-5">
+    <h2><i class="fas fa-upload"></i> Upload Contract</h2>
+    <p class="lead">Upload dummy contracts to Azure Files Storage</p>
+    <hr />
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Contract Upload Form</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Upload" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="ContractName" class="form-label"></label>
+                            <input asp-for="ContractName" class="form-control" />
+                            <span asp-validation-for="ContractName" class="text-danger"></span>
+                            <small class="form-text text-muted">Enter a descriptive name for the contract</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ContractType" class="form-label"></label>
+                            <select asp-for="ContractType" class="form-select" asp-items="@(new SelectList(ViewBag.ContractTypes, "Key", "Value"))">
+                                <option value="">Select Contract Type</option>
+                            </select>
+                            <span asp-validation-for="ContractType" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="EffectiveDate" class="form-label"></label>
+                                <input asp-for="EffectiveDate" class="form-control" type="date" />
+                                <span asp-validation-for="EffectiveDate" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="ExpiryDate" class="form-label"></label>
+                                <input asp-for="ExpiryDate" class="form-control" type="date" />
+                                <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ContractFile" class="form-label"></label>
+                            <input asp-for="ContractFile" class="form-control" type="file"
+                                   accept=".pdf,.doc,.docx,.txt,.xls,.xlsx,.jpg,.jpeg,.png" />
+                            <span asp-validation-for="ContractFile" class="text-danger"></span>
+                            <div class="form-text">
+                                Accepted formats: PDF, DOC, DOCX, TXT, XLS, XLSX, JPG, PNG (Max size: 10MB)
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-upload"></i> Upload Contract
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-list"></i> Back to List
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h6 class="card-title mb-0"><i class="fas fa-lightbulb"></i> Upload Tips</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success"></i>
+                            <strong>Use dummy data</strong> for testing
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success"></i>
+                            <strong>PDF files</strong> are recommended
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success"></i>
+                            Files stored in <strong>Azure Files Share</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            Secure and scalable storage
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header bg-success text-white">
+                    <h6 class="card-title mb-0"><i class="fas fa-cloud"></i> Azure Files</h6>
+                </div>
+                <div class="card-body">
+                    <p class="small mb-0">
+                        Contracts are stored in Azure Files Share, providing fully managed file shares
+                        in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Set default contract name from file name when file is selected
+        document.getElementById('ContractFile').addEventListener('change', function() {
+            const fileName = this.files[0]?.name;
+            const contractNameInput = document.getElementById('ContractName');
+
+            if (fileName && !contractNameInput.value) {
+                // Remove file extension for the contract name
+                const nameWithoutExtension = fileName.replace(/\.[^/.]+$/, "");
+                contractNameInput.value = nameWithoutExtension;
+            }
+        });
+    </script>
+}
